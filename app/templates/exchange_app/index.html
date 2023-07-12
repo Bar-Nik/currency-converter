@@ -9,7 +9,7 @@
                 </div>
                 <form id="form" class="p-3" action='' method="POST">
                     {% csrf_token %}
-                    <div class="form-row">
+                    <div class="row">
                         <div class="form-group col-md-4 mb-0">
                             <label for="amount">Сумма*</label>
                             <input id='amount' type="number" class="form-control" placeholder="Введите число" {% if from_amount %} value="{{ from_amount }}" {% endif %} name="from-amount">
